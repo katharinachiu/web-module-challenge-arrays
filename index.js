@@ -45,8 +45,8 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
+function copy(originalFlavors){
+    return(originalFlavors)
 }    
 
 
@@ -65,7 +65,11 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(/*your code here*/){
-   /*your code here*/
+    if (flavors === 31) {
+        answer = "True"
+    }
+    if else answer="False";
+   console.log
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -83,6 +87,7 @@ Use the addFlavor function below to do the following:
 
 function addFlavor(/*your code here*/){
    /*your code here*/
+   .push "Rainbow Sherbert"
 }
 
 
@@ -100,6 +105,7 @@ Use the removeLastFlavor function below to do the following:
 function removeLastFlavor(/*your code here*/){
    /*your code here*/
 }
+.pop 
 
 
 
@@ -117,7 +123,7 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(/*your code here*/){
     /*your code here*/
 }
-
+includes ()
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
