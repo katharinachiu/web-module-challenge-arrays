@@ -69,12 +69,15 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(array){
-    if (array.length === 31) {
-        return 'True'
-    }
-   else { return 'False' }
+    return array.length === 31;
 }
-console.log(is31Flavors)
+console.log(is31Flavors(originalFlavors))
+//     if (array.length === 31) {
+//         return 'True';
+//     }
+//    else { return 'False' }
+// }
+// console.log(is31Flavors)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -114,7 +117,7 @@ function removeLastFlavor(array){
    array.pop();
    return array;
 }
-console.log(removeFlavor(originalFlavors));
+console.log(removeLastFlavor(originalFlavors));
 
 
 
@@ -129,10 +132,11 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(array, number){
-    /*your code here*/
+function getFlavorByIndex(array, index){ 
+   return array[index]
+    
 }
-includes ()
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
@@ -151,7 +155,7 @@ Use the removeFlavorByName function below to do the following:
 
 function removeFlavorByName(array, string){
     // write a loop to check every item in array and see if it matches the string   
-    for(let i=0, i< array.length, i++){
+    for(let i=0; i< array.length; i++){
         // conditional because if the index matches the string, we want to do something wiht it 
         if(array [i] === string) {
             array.splice(i,1);
@@ -163,7 +167,7 @@ function removeFlavorByName(array, string){
     
     // array.unshift(strig)
     /*your code here*/
-}
+
 
 
 
